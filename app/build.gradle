@@ -1,0 +1,126 @@
+apply plugin: 'com.android.application'
+ext {
+    support_ver = '27.1.0'
+}
+android {
+    compileSdkVersion 27
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.iflytek.aiui.demo.chatsdk"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 36
+        versionName "1.5.4"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions 'version'
+    productFlavors {
+        sample {
+            dimension 'version'
+            versionName "${defaultConfig.versionName}.sample"
+
+            matchingFallbacks = ["debug", "release"]
+            if (file('src/main/jniLibs/armeabi-v7a/libmsc.so').exists()) {
+                buildConfigField 'Boolean', 'WAKEUP_ENABLE', 'true'
+            } else {
+                buildConfigField 'Boolean', 'WAKEUP_ENABLE', 'false'
+            }
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "AIUIChatDemo-${variant.versionName}-${variant.buildType.name}.apk"
+        }
+    }
+
+    dexOptions {
+        jumboMode true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/player_release.kotlin_module'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //Dagger2依赖
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.12'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.12'
+    implementation 'com.google.dagger:dagger:2.12'
+    implementation 'com.google.dagger:dagger-android:2.15'
+    implementation 'com.google.dagger:dagger-android-support:2.12'
+
+    //support库依赖
+    implementation "com.android.support:support-vector-drawable:$support_ver"
+    implementation "com.android.support:design:$support_ver"
+    implementation "com.android.support:appcompat-v7:$support_ver"
+    implementation "com.android.support:cardview-v7:$support_ver"
+    implementation "com.android.support:preference-v7:$support_ver"
+    implementation "com.android.support:preference-v14:$support_ver"
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    //Android Architecture Component依赖
+    implementation "android.arch.lifecycle:extensions:1.1.0"
+    annotationProcessor "android.arch.lifecycle:compiler:1.1.0"
+
+    testImplementation "android.arch.core:core-testing:1.1.0"
+    testImplementation 'org.json:json:20140107'
+    testImplementation 'org.mockito:mockito-core:2.23.4'
+    testImplementation 'junit:junit:4.12'
+
+    //权限请求
+    implementation('com.github.tbruyelle:rxpermissions:0.10.2') {
+        exclude group: "com.android.support"
+    }
+    //气泡内容支持富文本
+    implementation 'com.zzhoujay.richtext:richtext:2.5.4'
+    //聊天气泡
+    implementation 'com.daasuu:BubbleLayout:1.2.0'
+    //唤醒波浪动画
+    implementation 'com.github.Jay-Goo:WaveLineView:v1.0.3'
+    //语义结果json高亮
+    implementation 'com.pddstudio:highlightjs-android:1.5.0'
+    //日支分享库
+    implementation 'gdut.bsx:share2:0.9.3'
+    //HTTP测试数据图依赖
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    //日志打印库
+    implementation 'com.jakewharton.timber:timber:4.6.1'
+    implementation 'com.jaredrummler:material-spinner:1.2.5'
+
+    //AIUIPlayer播放器
+    implementation 'com.github.pangxiezhou.AIUIPlayer:player:-SNAPSHOT'
+    implementation 'com.github.pangxiezhou.AIUIPlayer:migu:-SNAPSHOT'
+    implementation 'com.blankj:utilcode:1.6.3'
+    implementation 'com.android.support:multidex:1.0.1'
+}
+
+
