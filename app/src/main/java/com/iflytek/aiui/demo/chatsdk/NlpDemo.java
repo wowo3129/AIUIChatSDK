@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.Utils;
+import com.iflytek.aiui.demo.chatsdk.speech.abstracts.IResultListener;
 
 import java.io.File;
 
@@ -17,7 +18,7 @@ import java.io.File;
  *
  * @author ydong
  */
-public class NlpDemo extends Activity {
+public class NlpDemo extends Activity implements IResultListener {
 
 
     private TextView displaytext;
@@ -38,6 +39,7 @@ public class NlpDemo extends Activity {
     private void initAIUI() {
         SpeechManager.CreateSpeechUtility(getApplication(), "5b614ca0");
         SpeechManager.getInstance().createAgent();
+        SpeechManager.getInstance().setIResultListener(this);
     }
 
     @Override
@@ -57,4 +59,8 @@ public class NlpDemo extends Activity {
     }
 
 
+    @Override
+    public void nlpResult(String result) {
+        displaytext.setText(result);
+    }
 }

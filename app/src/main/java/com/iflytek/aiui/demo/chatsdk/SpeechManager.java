@@ -15,6 +15,7 @@ import com.iflytek.aiui.AIUIConstant;
 import com.iflytek.aiui.AIUIEvent;
 import com.iflytek.aiui.AIUIListener;
 import com.iflytek.aiui.AIUIMessage;
+import com.iflytek.aiui.demo.chatsdk.speech.abstracts.IResultListener;
 import com.iflytek.aiui.demo.chatsdk.speech.abstracts.ISpeakListener;
 import com.iflytek.cloud.ErrorCode;
 import com.iflytek.cloud.InitListener;
@@ -46,6 +47,7 @@ public class SpeechManager {
      * 在线合成还是离线合成，默认是在线
      */
     private boolean isLocalSpeaker = true;
+    private IResultListener iResultListener;
 
     public SpeechManager(Context context) {
         this.context = context;
@@ -324,6 +326,10 @@ public class SpeechManager {
     private String[] mIATPGSStack = new String[256];
     long allcount = 0;
 
+    public void setIResultListener(IResultListener listener) {
+        this.iResultListener = listener;
+    }
+
     /**
      * 解析听写结果更新当前语音消息的听写内容
      */
@@ -393,7 +399,7 @@ public class SpeechManager {
                 //开始合成
                 AIUIMessage startTts = new AIUIMessage(AIUIConstant.CMD_TTS, AIUIConstant.START, 0, params.toString(), ttsData);
                 mAIUIAgent.sendMessage(startTts);
-
+                iResultListener.nlpResult(ttsStr);
                 LogUtils.d(TAG, "wowo3129 FINAL_RESULT---->" + PGSResult.toString() + "<----【" + allcount + "】");
             }
         }
