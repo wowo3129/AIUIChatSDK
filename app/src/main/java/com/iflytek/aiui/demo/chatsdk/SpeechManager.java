@@ -1,11 +1,7 @@
 package com.iflytek.aiui.demo.chatsdk;
 
-import android.app.Application;
 import android.content.Context;
-import android.content.Intent;
 import android.content.res.AssetManager;
-import android.os.Handler;
-import android.os.Message;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -15,12 +11,7 @@ import com.iflytek.aiui.AIUIConstant;
 import com.iflytek.aiui.AIUIEvent;
 import com.iflytek.aiui.AIUIListener;
 import com.iflytek.aiui.AIUIMessage;
-import com.iflytek.aiui.demo.chatsdk.speech.abstracts.IResultListener;
-import com.iflytek.aiui.demo.chatsdk.speech.abstracts.ISpeakListener;
-import com.iflytek.cloud.ErrorCode;
-import com.iflytek.cloud.InitListener;
-import com.iflytek.cloud.SpeechSynthesizer;
-import com.iflytek.cloud.SpeechUtility;
+import com.iflytek.aiui.demo.chatsdk.speech.abstracts.BaseSpeechCallback;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -28,7 +19,6 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
 
 /**
@@ -37,26 +27,23 @@ import java.nio.charset.StandardCharsets;
 public class SpeechManager {
     private final static String TAG = "SpeechManager";
     private static SpeechManager mInstance;
-    public static Context context;
-    private SpeechSynthesizer mSpeechSynthesizer;
-    private SpeechHandler mSpeechHandler;
-    private String speaker = "jiajia";
-    private AIUIAgent mAIUIAgent = null;
+    public Context context;
     private int mAIUIState = AIUIConstant.STATE_IDLE;
-    /**
-     * 在线合成还是离线合成，默认是在线
-     */
-    private boolean isLocalSpeaker = true;
-    private IResultListener iResultListener;
+    private AIUIAgent mAIUIAgent = null;
+    private BaseSpeechCallback speechCallback;
 
-    public SpeechManager(Context context) {
-        this.context = context;
-        // 初始化合成引擎
-        mSpeechSynthesizer = SpeechSynthesizer.createSynthesizer(context, mSynthersizerInit);
-        //处理合成需要的参数设置
-        mSpeechHandler = new SpeechHandler(context, mSpeechSynthesizer);
+    public SpeechManager(Context cmt) {
+        this.context = cmt;
     }
 
+    /**
+     *
+     */
+    public static void CreateInstance() {
+        if (mInstance == null) {
+            mInstance = new SpeechManager(App.getContext());
+        }
+    }
 
     /**
      * 获取已经初始化的实例对象
@@ -65,14 +52,11 @@ public class SpeechManager {
      */
     public static SpeechManager getInstance() {
         if (mInstance == null) {
-            mInstance = new SpeechManager(App.getContext());
+            Log.e(TAG, "SpeechManager not init yet");
         }
         return mInstance;
     }
 
-    public static void CreateSpeechUtility(Application app, String appid) {
-        SpeechUtility.createUtility(app, "appid=" + appid);
-    }
 
     /**
      * 初始化创建AIUI代理
@@ -188,16 +172,16 @@ public class SpeechManager {
 
         switch (event.eventType) {
             case AIUIConstant.EVENT_CONNECTED_TO_SERVER:
-                LogUtils.i(TAG, "on event: " + event.eventType + "<--已连接服务器");
+                Log.i(TAG, "on event: " + event.eventType + "<--已连接服务器");
                 startVoiceNlp();
                 break;
 
             case AIUIConstant.EVENT_SERVER_DISCONNECTED:
-                LogUtils.i(TAG, "on event: " + event.eventType + "<--与服务器断连");
+                Log.i(TAG, "on event: " + event.eventType + "<--与服务器断连");
                 break;
 
             case AIUIConstant.EVENT_WAKEUP:
-                LogUtils.i(TAG, "on event: " + event.eventType + "<--进入识别状态");
+                Log.i(TAG, "on event: " + event.eventType + "<--进入识别状态");
                 break;
             //通过EVENT_RESULT解析AIUI返回的听写和语义结果
             case AIUIConstant.EVENT_RESULT:
@@ -212,22 +196,22 @@ public class SpeechManager {
 
             case AIUIConstant.EVENT_VAD: {
                 if (AIUIConstant.VAD_BOS == event.arg1) {
-                    LogUtils.i(TAG, "找到vad_bos");
+                    Log.i(TAG, "找到vad_bos");
                 } else if (AIUIConstant.VAD_EOS == event.arg1) {
-                    LogUtils.i(TAG, "找到vad_eos");
+                    Log.i(TAG, "找到vad_eos");
                 } else {
-                    LogUtils.i("" + event.arg2);
+                    Log.i(TAG, "" + event.arg2);
                 }
             }
             break;
 
             case AIUIConstant.EVENT_START_RECORD: {
-                LogUtils.i(TAG, "on event: " + event.eventType + "<--已开始录音");
+                Log.i(TAG, "on event: " + event.eventType + "<--已开始录音");
             }
             break;
 
             case AIUIConstant.EVENT_STOP_RECORD: {
-                LogUtils.i(TAG, "on event: " + event.eventType + "<--已停止录音");
+                Log.i(TAG, "on event: " + event.eventType + "<--已停止录音");
             }
             break;
 
@@ -237,13 +221,13 @@ public class SpeechManager {
 
                 if (AIUIConstant.STATE_IDLE == mAIUIState) {
                     // 闲置状态，AIUI未开启
-                    LogUtils.i(TAG, "on event STATE_IDLE: " + event.eventType + "<--闲置状态，AIUI未开启[0]");
+                    Log.i(TAG, "on event STATE_IDLE: " + event.eventType + "<--闲置状态，AIUI未开启[0]");
                 } else if (AIUIConstant.STATE_READY == mAIUIState) {
                     // AIUI已就绪，等待唤醒
-                    LogUtils.i(TAG, "on event STATE_READY: " + event.eventType + "<--AIUI已就绪，等待唤醒[1]");
+                    Log.i(TAG, "on event STATE_READY: " + event.eventType + "<--AIUI已就绪，等待唤醒[1]");
                 } else if (AIUIConstant.STATE_WORKING == mAIUIState) {
                     // AIUI工作中，可进行交互
-                    LogUtils.i(TAG, "on event STATE_WORKING: " + event.eventType + "<--AIUI工作中，可进行交互[2]");
+                    Log.i(TAG, "on event STATE_WORKING: " + event.eventType + "<--AIUI工作中，可进行交互[2]");
                 }
             }
             break;
@@ -255,23 +239,23 @@ public class SpeechManager {
             case AIUIConstant.EVENT_TTS: {
                 switch (event.arg1) {
                     case AIUIConstant.TTS_SPEAK_BEGIN:
-                        LogUtils.d(TAG, "开始播放");
+                        Log.d(TAG, "开始播放");
                         break;
 
                     case AIUIConstant.TTS_SPEAK_PROGRESS:
-                        LogUtils.d(" 播放进度为" + event.data.getInt("percent"));     // 播放进度
+                        Log.d(TAG, " 播放进度为" + event.data.getInt("percent"));     // 播放进度
                         break;
 
                     case AIUIConstant.TTS_SPEAK_PAUSED:
-                        LogUtils.d(TAG, "暂停播放");
+                        Log.d(TAG, "暂停播放");
                         break;
 
                     case AIUIConstant.TTS_SPEAK_RESUMED:
-                        LogUtils.d(TAG, "恢复播放");
+                        Log.d(TAG, "恢复播放");
                         break;
 
                     case AIUIConstant.TTS_SPEAK_COMPLETED:
-                        LogUtils.d(TAG, "播放完成");
+                        Log.d(TAG, "播放完成");
                         break;
 
                     default:
@@ -302,7 +286,7 @@ public class SpeechManager {
             if (content.has("cnt_id") && !sub.equals("tts")) {
                 String cnt_id = content.getString("cnt_id");
                 JSONObject cntJson = new JSONObject(new String(event.data.getByteArray(cnt_id), StandardCharsets.UTF_8));
-                LogUtils.d(TAG, "识别结果【1】-->" + cntJson.toString());
+                Log.d(TAG, "识别结果【1】-->" + cntJson.toString());
                 if ("nlp".equals(sub)) {
                     //语义结果(nlp)
                     JSONObject semanticResult = cntJson.optJSONObject("intent");
@@ -310,7 +294,8 @@ public class SpeechManager {
                         //解析得到语义结果，将语义结果作为消息插入到消息列表中
                         String s = semanticResult.toString();
                         // TODO: 2019/2/16 语义结果
-                        LogUtils.d(TAG, "wowo3129 语义结果---->" + s);
+                        Log.d(TAG, "wowo3129 语义结果---->" + s);
+                        speechCallback.nlpResult(s);
                     }
                 } else if ("iat".equals(sub)) {
                     //听写结果(iat)
@@ -318,7 +303,7 @@ public class SpeechManager {
                 }
             }
         } catch (Throwable e) {
-            LogUtils.d(TAG, "---->Throwable" + e.toString());
+            Log.d(TAG, "---->Throwable" + e.toString());
             e.printStackTrace();
         }
     }
@@ -326,8 +311,8 @@ public class SpeechManager {
     private String[] mIATPGSStack = new String[256];
     long allcount = 0;
 
-    public void setIResultListener(IResultListener listener) {
-        this.iResultListener = listener;
+    public void setBaseSpeechCallback(BaseSpeechCallback listener) {
+        this.speechCallback = listener;
     }
 
     /**
@@ -370,7 +355,7 @@ public class SpeechManager {
             //汇总stack经过操作后的剩余的有效结果信息
             for (int index = 0; index < mIATPGSStack.length; index++) {
                 if (TextUtils.isEmpty(mIATPGSStack[index])) continue;
-                if (!TextUtils.isEmpty(PGSResult.toString())) PGSResult.append("\n");
+//                if (!TextUtils.isEmpty(PGSResult.toString())) PGSResult.append("\n");
                 PGSResult.append(mIATPGSStack[index]);
                 //如果是最后一条听写结果，则清空stack便于下次使用
                 if (lastResult) {
@@ -382,13 +367,8 @@ public class SpeechManager {
                 // TODO: 2019/2/16 最终听写到的结果内容
 
                 String ttsStr = PGSResult.toString();   //得到待合成文本
-//                SpeechManager.getInstance().startSpeak(ttsStr);
                 byte[] ttsData = new byte[0];  //转为二进制数据
-                try {
-                    ttsData = ttsStr.getBytes("utf-8");
-                } catch (UnsupportedEncodingException e) {
-                    e.printStackTrace();
-                }
+                ttsData = ttsStr.getBytes(StandardCharsets.UTF_8);
 
                 StringBuffer params = new StringBuffer();  //构建合成参数
                 params.append("vcn=xiaoyan");  //合成发音人
@@ -399,119 +379,11 @@ public class SpeechManager {
                 //开始合成
                 AIUIMessage startTts = new AIUIMessage(AIUIConstant.CMD_TTS, AIUIConstant.START, 0, params.toString(), ttsData);
                 mAIUIAgent.sendMessage(startTts);
-                iResultListener.nlpResult(ttsStr);
+                speechCallback.recognizeResult(ttsStr);
                 LogUtils.d(TAG, "wowo3129 FINAL_RESULT---->" + PGSResult.toString() + "<----【" + allcount + "】");
             }
         }
     }
 
-    /**
-     * 初始化语音合成
-     */
-    private InitListener mSynthersizerInit = new InitListener() {
 
-        @Override
-        public void onInit(int code) {
-            Log.d(TAG, "SpeechSynthesizer init() code = " + code);
-            if (code != ErrorCode.SUCCESS) {
-                Log.d(TAG, "初始化SpeechSynthesizer失败,错误码：" + code);
-                return;
-            }
-            sendMessage(mSpeechHandler, MessageType.CALLBACK_SpeechSynthesizer_INIT, 0, 0, null);
-        }
-    };
-
-    /**
-     * 消息发送
-     *
-     * @param handler target
-     * @param what    消息类型
-     * @param arg0    消息参数
-     * @param arg1    消息参数
-     * @param obj     消息参数
-     */
-    private void sendMessage(Handler handler, int what, int arg0, int arg1, Object obj) {
-        Log.d(TAG, "sendMessage what=" + what);
-        if (handler != null) {
-            Message msg = handler.obtainMessage(what, arg0, arg1, obj);
-            msg.sendToTarget();
-        }
-    }
-
-    public String getSpeaker() {
-        return speaker;
-    }
-
-    /**
-     * 设置发音人
-     *
-     * @param speaker
-     */
-    public void setSpeaker(String speaker) {
-        this.speaker = speaker;
-        sendMessage(mSpeechHandler,
-                MessageType.CALLBACK_SpeechSynthesizer_INIT, 0, 0, null);
-    }
-
-    public boolean isLocalSpeaker() {
-        return isLocalSpeaker;
-    }
-
-    /**
-     * 设置当前用本地还是在线
-     *
-     * @param isLocalSpeaker
-     */
-    public void setLocalSpeaker(boolean isLocalSpeaker) {
-        this.isLocalSpeaker = isLocalSpeaker;
-        sendMessage(mSpeechHandler,
-                MessageType.CALLBACK_SpeechSynthesizer_INIT, 0, 0, null);
-    }
-
-    public void startSpeak(String text) {
-        if (text == null || text.length() < 1)
-            return;
-        startSpeak(text, null, null);
-    }
-
-    public void startSpeak(String text, ISpeakListener listener) {
-        if (text == null || text.length() < 1) {
-            return;
-        }
-        if (mSpeechHandler != null) {
-            mSpeechHandler.setSpeakListener(listener);
-        }
-        Intent intent = new Intent();
-        intent.putExtra(SpeechHandler.SPEAKTXT, text);
-        sendMessage(mSpeechHandler, MessageType.CALL_START_SPEAK, 0, 0, intent);
-    }
-
-    public void startSpeak(String text, ISpeakListener listener, Intent i) {
-        stopSpeak();
-        if (text == null || text.length() < 1) {
-            return;
-        }
-        if (mSpeechHandler != null) {
-            mSpeechHandler.setSpeakListener(listener);
-        }
-        Intent intent = new Intent();
-        intent.putExtra(SpeechHandler.SPEAKTXT, text);
-        sendMessage(mSpeechHandler, MessageType.CALL_START_SPEAK, 0, 0, intent);
-    }
-
-    public void stopSpeak() {
-        Log.v(TAG, "stopSpeak");
-        sendMessage(mSpeechHandler, MessageType.CALL_STOP_SPEAK, 0, 0, null);
-    }
-
-    /**
-     * 是否在播放TTS
-     */
-    public boolean isSpeaking() {
-        Log.v(TAG, "isSpeaking");
-        if (mSpeechHandler != null) {
-            return mSpeechHandler.isSpeaking();
-        }
-        return false;
-    }
 }

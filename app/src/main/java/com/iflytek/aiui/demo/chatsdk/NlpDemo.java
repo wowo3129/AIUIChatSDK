@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.Utils;
-import com.iflytek.aiui.demo.chatsdk.speech.abstracts.IResultListener;
+import com.iflytek.aiui.demo.chatsdk.speech.abstracts.BaseSpeechCallback;
 
 import java.io.File;
 
@@ -18,9 +18,10 @@ import java.io.File;
  *
  * @author ydong
  */
-public class NlpDemo extends Activity implements IResultListener {
+public class NlpDemo extends Activity {
 
 
+    private static final String TAG = "ydong";
     private TextView displaytext;
 
     @Override
@@ -37,10 +38,37 @@ public class NlpDemo extends Activity implements IResultListener {
 
 
     private void initAIUI() {
-        SpeechManager.CreateSpeechUtility(getApplication(), "5b614ca0");
         SpeechManager.getInstance().createAgent();
-        SpeechManager.getInstance().setIResultListener(this);
+        SpeechManager.getInstance().setBaseSpeechCallback(speechCallback);
     }
+
+    BaseSpeechCallback speechCallback = new BaseSpeechCallback() {
+        @Override
+        public void recognizeResult(String text) {
+            LogUtils.d(TAG, "recognizeResult::" + text);
+        }
+
+        @Override
+        public void nlpResult(String json) {
+            displaytext.setText(json);
+            LogUtils.d(TAG, "nlpResult::" + json);
+        }
+
+        @Override
+        public void onRecognizeProgress(String text, boolean isSecondRecognize) {
+            super.onRecognizeProgress(text, isSecondRecognize);
+        }
+
+        @Override
+        public void onVolumeChanged(int volume, byte[] arg1) {
+            super.onVolumeChanged(volume, arg1);
+        }
+
+        @Override
+        public void onEndOfSpeech() {
+            super.onEndOfSpeech();
+        }
+    };
 
     @Override
     protected void onDestroy() {
@@ -59,8 +87,4 @@ public class NlpDemo extends Activity implements IResultListener {
     }
 
 
-    @Override
-    public void nlpResult(String result) {
-        displaytext.setText(result);
-    }
 }
