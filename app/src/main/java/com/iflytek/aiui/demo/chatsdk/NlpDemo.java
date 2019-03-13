@@ -3,15 +3,11 @@ package com.iflytek.aiui.demo.chatsdk;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
-import android.os.Environment;
-import android.view.Window;
+import android.util.Log;
 import android.widget.TextView;
 
-import com.blankj.utilcode.util.LogUtils;
-import com.blankj.utilcode.util.Utils;
-import com.iflytek.aiui.demo.chatsdk.speech.abstracts.BaseSpeechCallback;
-
-import java.io.File;
+import com.aiuisdk.BaseSpeechCallback;
+import com.aiuisdk.SpeechManager;
 
 /**
  * 语义理解demo。
@@ -28,45 +24,33 @@ public class NlpDemo extends Activity {
     @SuppressLint("ShowToast")
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.nlpdemo);
-        displaytext = findViewById(R.id.displaytext);
+        initView();
+        initChatSDK();
+    }
 
-        initlog();
-        initAIUI();
+    private void initView() {
+        displaytext = findViewById(R.id.displaytext);
     }
 
 
-    private void initAIUI() {
-        SpeechManager.getInstance().createAgent();
+    private void initChatSDK() {
+        SpeechManager.CreateInstance(getApplicationContext());
         SpeechManager.getInstance().setBaseSpeechCallback(speechCallback);
     }
 
     BaseSpeechCallback speechCallback = new BaseSpeechCallback() {
         @Override
         public void recognizeResult(String text) {
-            LogUtils.d(TAG, "recognizeResult::" + text);
+            Log.d(TAG, "recognizeResult::" + text);
+            displaytext.setText(text);
+
         }
 
         @Override
-        public void nlpResult(String json) {
-            displaytext.setText(json);
-            LogUtils.d(TAG, "nlpResult::" + json);
-        }
-
-        @Override
-        public void onRecognizeProgress(String text, boolean isSecondRecognize) {
-            super.onRecognizeProgress(text, isSecondRecognize);
-        }
-
-        @Override
-        public void onVolumeChanged(int volume, byte[] arg1) {
-            super.onVolumeChanged(volume, arg1);
-        }
-
-        @Override
-        public void onEndOfSpeech() {
-            super.onEndOfSpeech();
+        public void nlpResult(String text, String json) {
+            Log.d(TAG, "nlpResult::" + text);
+            SpeechManager.onSpeaking(text);
         }
     };
 
@@ -75,16 +59,5 @@ public class NlpDemo extends Activity {
         super.onDestroy();
         SpeechManager.getInstance().destroyAgent();
     }
-
-    /**
-     * log to /sdcard/anzerTTS/
-     */
-    private void initlog() {
-        Utils.init(getApplicationContext());
-        LogUtils.Builder builder = new LogUtils.Builder().setBorderSwitch(false).setLog2FileSwitch(true)
-                .setDir(new File(Environment.getExternalStorageDirectory().getPath() + "/AIUINEW"))
-                .setLogSwitch(true);
-    }
-
 
 }

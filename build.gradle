@@ -27,45 +27,6 @@ allprojects {
     }
 }
 
-task prepareSample {
-    doLast {
-        delete 'output'
-
-        copy {
-            from  project.projectDir
-            into 'output/main'
-
-            // 忽略签名文件
-            exclude 'iflytekSigneKey'
-            exclude 'local.properties'
-            exclude 'gradle.properties'
-            //去除full的配置
-            exclude '**/full.gradle'
-            exclude '**/full/'
-            exclude '**/testFull/'
-            exclude '**/smtp_mail_library/'
-            // 忽略AIUI生成目录
-            exclude '**/output/'
-            // 忽略gradle生成目录
-            exclude '**/*.apk', '**/*.ap_', '**/*.dex', '**/*.class'
-            exclude '**/bin/', '**/gen/', '**/out/', '**/build/', '**/proguard/'
-            exclude '**/*.iml', '**/.gradle/', '**/.idea/', '**/.externalNativeBuild/', '**/.navigation/'
-        }
-
-        File settingsFile = file('output/main/settings.gradle')
-        settingsFile.text = "include ':app'"
-
-        File sampleBuildFile = file('output/main/app/build.gradle')
-        sampleBuildFile.text = sampleBuildFile.text.replace("apply from: 'full.gradle'", "")
-
-        File config = file('output/main/assets/cfg/aiui_phone.cfg')
-        String configContent = config.text
-        configContent = configContent.replaceAll('"appid"\\s*:\\s*".+?"\\,', '"appid": "XXXXXXXX"')
-        configContent = configContent.replaceAll('"key"\\s*:\\s*".+?"', '')
-        config.write(configContent, 'utf-8')
-
-    }
-}
 
 task clean(type: Delete) {
     delete rootProject.buildDir

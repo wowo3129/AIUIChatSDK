@@ -12,7 +12,8 @@
         android:id="@+id/displaytext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="result"
         android:textColor="#00ff00" />
+
 
 </LinearLayout>
