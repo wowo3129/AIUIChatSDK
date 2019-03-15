@@ -1,10 +1,12 @@
 # ChatSDK 全双工语音识别库
-您可以下载本项目，然后将ChatSDK作为 Module 导入你的项目使用<br/>
-<br/>
-<br/>
-#### 介绍：ChatSDK 是基于讯飞的AIUI进行封装，让大家尽可能简洁的使用AIUI <br/>
 #### 重大亮点：全双工语音识别，不中断，不中断，不中断<br/>
+ChatSDK 是基于讯飞的AIUI进行封装，使用简洁，您可以下载本项目，然后将ChatSDK作为 Module 导入你的项目使用<br/>
+[核心类:SpeechManager](https://github.com/wowo3129/AIUIChatSDK/blob/master/chatsdk/src/main/java/com/aiuisdk/SpeechManager.java)
+<br/>
+<br/>
 #### 功能包括：语音识别、语音合成、语音语义理解、文本语义理解<br/>
+
+
 
 ### 使用说明：
 1：将chatsdk作为module引入自己的项目<br/>
@@ -44,4 +46,15 @@ BaseSpeechCallback speechCallback = new BaseSpeechCallback() {
         SpeechManager.onSpeaking(text);
     }
 };
+```
+#### step4 : 错误码回调接口
+```java
+/**
+ * 设置错误回调接口
+ *
+ * @param callback 传入错误信息回调接口
+ */
+public void setErrorInfoCallback(IErrorInfoCallback callback) {
+    iErrorInfoCallback = callback;
+}
 ```
