@@ -4,6 +4,7 @@
 <br/>
 共同特点：实现了全双工语音识别iat、合成tts、和语义nlp部分接口的封装,经过稳定测试，通过简洁的调用方式来满足开发需求。两者核心类都是 SpeechManager</br>
 参考文档：[AIUI开放平台后处理接入完整示例](https://github.com/happyLiMing/AIUITPPServer)、[讯飞论坛](http://bbs.xfyun.cn/forum.php)</br>
+参考项目：[电视语音助手](https://github.com/crjwgr/TvAssistant)
 ***
 ## [ChatSDK](https://github.com/wowo3129/AIUIChatSDK/tree/master/chatsdk) 全双工语音识别库
 #### 重大亮点：全双工语音识别，不中断，不中断，不中断<br/>
