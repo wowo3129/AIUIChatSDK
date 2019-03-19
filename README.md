@@ -66,3 +66,6 @@ public void setErrorInfoCallback(IErrorInfoCallback callback) {
     iErrorInfoCallback = callback;
 }
 ```
+***
+讯飞服务有时候不稳定的情况：封装成工具使用
+答：讯飞的服务器稳不稳定，你下载下讯飞的AIUI demo里面有个http测试，实时的观察讯飞当前网络的链接情况
