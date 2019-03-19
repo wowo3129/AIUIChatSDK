@@ -66,7 +66,7 @@ public class SpeechManager {
 
     private SpeechManager() {
         createAgent();
-        initializeMSCIfExist(context, getAppid());
+//        initializeMSCIfExist(context, getAppid());
     }
 
     public String getAppid() {
@@ -228,7 +228,6 @@ public class SpeechManager {
         String params = "sample_rate=16000,data_type=audio,pers_param={\"uid\":\"\"},tag=audio-tag";
         AIUIMessage startRecord = new AIUIMessage(AIUIConstant.CMD_START_RECORD, 0, 0, params, null);
         mAIUIAgent.sendMessage(startRecord);
-
     }
 
     /**
@@ -240,7 +239,6 @@ public class SpeechManager {
             Log.i(TAG, "AIUIAgent 为空，请先创建");
             return;
         }
-
         Log.i(TAG, "停止对话监听状态，并且停止合成播放 stop voice nlp");
         String params = "sample_rate=16000,data_type=audio";
         AIUIMessage stopRecord = new AIUIMessage(AIUIConstant.CMD_STOP_RECORD, 0, 0, params, null);
