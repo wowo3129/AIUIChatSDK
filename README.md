@@ -1,7 +1,7 @@
 ***
-[ChatSDK](https://github.com/wowo3129/AIUIChatSDK/tree/master/chatsdk) :是对AIUI的封装,套餐费用最低在6万/年</br>
-[iflylib](https://github.com/wowo3129/MvpApp/tree/master/iflylib) :是对原始msc的封装，相对AIUI便宜很多</br>
-[baidulib](https://github.com/wowo3129/MvpApp/tree/master/baidulib) :是对百度语音的封装,百度号称永久免费</br>
+[ChatSDK](https://github.com/wowo3129/AIUIChatSDK/tree/master/chatsdk) :是对AIUI的语音SDK封装,套餐费用最低在6万/年</br>
+[iflylib](https://github.com/wowo3129/MvpApp/tree/master/iflylib) :是对原始msc的语音SDK封装，相对AIUI便宜很多</br>
+[baidulib](https://github.com/wowo3129/AIUIChatSDK/tree/master/baidulib) :是对百度语音SDK封装,百度号称永久免费</br>
 <br/>
 共同特点：实现了全双工语音识别iat、合成tts、和语义nlp部分接口的封装,经过稳定测试，通过简洁的调用方式来满足开发需求。两者核心类都是 SpeechManager</br>
 参考文档：[AIUI开放平台后处理接入完整示例](https://github.com/happyLiMing/AIUITPPServer)、[讯飞论坛](http://bbs.xfyun.cn/forum.php)</br>
@@ -69,21 +69,21 @@ public void setErrorInfoCallback(IErrorInfoCallback callback) {
 ```
 ***
 #疑难问题：
-```
+
 1：讯飞服务有时候不稳定的情况：封装专门的测试工具<br/>
 2：讯飞的服务器稳不稳定，对讯飞的HTTP和百度这种三方网站进行封装，实时的观察讯飞当前网络的链接UI动态情况<br/>
-3：vad 前后置端点的处理, 解决跟interact_timeout两者之间互相影响的问题
-4: 离线语音合成TTS不用讯飞语记
-5：需要等2小时测试一下，但是热词并不是绝对的，只是增加热词的被识别出来的概率。
-6：清除历史
-  AIUI支持多轮对话，如在问合肥今天的天气怎么样之后，再询问明天的呢，AIUI会结合上一句询问合肥今天 天气的历史，就会回答合肥明天的天气。
-  AIUI默认在休眠后唤醒会清除交互历史，在交互状态下唤醒，则不会清除交互历史。
-  AIUI清除历史的方式是可配置的，默认为auto即是上面描述的模式。当配置成user值后， 用户可以通过发送CMD_CLEAN_DIALOG_HISTORY在任何时候手动清除交互的历史。即使在上面两种情况下，客户端没有主动清除交互历史，服务端保存用户交互历史的时间也是有限的，当用户交互超过5轮后，服务端也会将交互历史清空。
-7：AIUI的SDK出现网络10120问题，实际是anzer5G网络来回切换导致网络不稳定，换了高功率的HRR-Test（anzer2017）后正常.
-8:上传热词无法通过客户端SDK进行，单纯的热词仅可通过网页端进行上传，如果您逐步深入了解了所见即可说、动态实体等高级特性就会发现上传的实体等资源本身就是热词的一种。
-9：AIUI主动在线合成有时会出现卡顿，建议使用离线合成
-10：AIUI不支持识别语种的切换，只有通过情景模式来切换自己想要的语种
-```
+3：vad 前后置端点的处理, 解决跟interact_timeout两者之间互相影响的问题<br/>
+4: 离线语音合成TTS不用讯飞语记<br/>
+5：需要等2小时测试一下，但是热词并不是绝对的，只是增加热词的被识别出来的概率。<br/>
+6：清除历史<br/>
+  AIUI支持多轮对话，如在问合肥今天的天气怎么样之后，再询问明天的呢，AIUI会结合上一句询问合肥今天 天气的历史，就会回答合肥明天的天气。<br/>
+  AIUI默认在休眠后唤醒会清除交互历史，在交互状态下唤醒，则不会清除交互历史。<br/>
+  AIUI清除历史的方式是可配置的，默认为auto即是上面描述的模式。当配置成user值后， 用户可以通过发送CMD_CLEAN_DIALOG_HISTORY在任何时候手动清除交互的历史。即使在上面两种情况下，客户端没有主动清除交互历史，服务端保存用户交互历史的时间也是有限的，当用户交互超过5轮后，服务端也会将交互历史清空。<br/>
+7：AIUI的SDK出现网络10120问题，实际是anzer5G网络来回切换导致网络不稳定，换了高功率的HRR-Test（anzer2017）后正常.<br/>
+8:上传热词无法通过客户端SDK进行，单纯的热词仅可通过网页端进行上传，如果您逐步深入了解了所见即可说、动态实体等高级特性就会发现上传的实体等资源本身就是热词的一种。<br/>
+9：AIUI主动在线合成有时会出现卡顿，建议使用离线合成<br/>
+10：AIUI不支持识别语种的切换，只有通过情景模式来切换自己想要的语种<br/>
+11：(未完待续。。。）
 ***
 ```
 联系方式： QQ群: 673450581   个人QQ：1094035520   昵称：肥兔子
