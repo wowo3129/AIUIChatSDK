@@ -83,3 +83,7 @@ public void setErrorInfoCallback(IErrorInfoCallback callback) {
 9：AIUI主动在线合成有时会出现卡顿，建议使用离线合成
 10：AIUI不支持识别语种的切换，只有通过情景模式来切换自己想要的语种
 ```
+***
+```
+联系方式： QQ群: 673450581   个人QQ：1094035520   昵称：肥兔子
+```
