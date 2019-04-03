@@ -1,3 +1,4 @@
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 ***
 [ChatSDK](https://github.com/wowo3129/AIUIChatSDK/tree/master/chatsdk) :是对AIUI的语音SDK封装,套餐费用最低在6万/年</br>
 [iflylib](https://github.com/wowo3129/MvpApp/tree/master/iflylib) :是对原始msc的语音SDK封装，相对AIUI便宜很多</br>
@@ -83,6 +84,7 @@ public void setErrorInfoCallback(IErrorInfoCallback callback) {
 8:上传热词无法通过客户端SDK进行，单纯的热词仅可通过网页端进行上传，如果您逐步深入了解了所见即可说、动态实体等高级特性就会发现上传的实体等资源本身就是热词的一种。<br/>
 9：AIUI主动在线合成有时会出现卡顿，建议使用离线合成<br/>
 10：AIUI不支持识别语种的切换，只有通过情景模式来切换自己想要的语种<br/>
+11：[关于 AIUI "continuous" 会识别到自身合成语音问题](http://bbs.xfyun.cn/forum.php?mod=viewthread&tid=40844&highlight=%E5%90%88%E6%88%90)<br/>
 11：(未完待续。。。）
 ***
 ```
