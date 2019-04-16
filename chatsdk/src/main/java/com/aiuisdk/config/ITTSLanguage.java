@@ -24,6 +24,7 @@ import java.lang.annotation.RetentionPolicy;
         ITTSLanguage.vixk,
         ITTSLanguage.vixqa,
         ITTSLanguage.vixying,
+        ITTSLanguage.xiaofeng,
         ITTSLanguage.x_chongchong
 })
 @Retention(RetentionPolicy.SOURCE)
