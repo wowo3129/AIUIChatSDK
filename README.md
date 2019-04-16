@@ -5,7 +5,7 @@
 [baidulib](https://github.com/wowo3129/AIUIChatSDK/tree/master/baidulib) :是对百度语音SDK封装,百度号称永久免费</br>
 <br/>
 共同特点：实现了全双工语音识别iat、合成tts、和语义nlp部分接口的封装,经过稳定测试，通过简洁的调用方式来满足开发需求。两者核心类都是 SpeechManager</br>
-参考文档：[AIUI开放平台后处理接入完整示例](https://github.com/happyLiMing/AIUITPPServer)、[讯飞论坛](http://bbs.xfyun.cn/forum.php)</br>
+参考文档：[玩转AIUI后处理](https://github.com/happyLiMing/AIUITPPServer)、[讯飞论坛](http://bbs.xfyun.cn/forum.php)</br>
 参考项目：[电视语音助手](https://github.com/crjwgr/TvAssistant)
 ***
 ## [ChatSDK](https://github.com/wowo3129/AIUIChatSDK/tree/master/chatsdk) 全双工语音识别库
@@ -85,7 +85,8 @@ public void setErrorInfoCallback(IErrorInfoCallback callback) {
 9：AIUI主动在线合成有时会出现卡顿，建议使用离线合成<br/>
 10：AIUI不支持识别语种的切换，只有通过情景模式来切换自己想要的语种<br/>
 11：[关于 AIUI "continuous" 会识别到自身合成语音问题](http://bbs.xfyun.cn/forum.php?mod=viewthread&tid=40844&highlight=%E5%90%88%E6%88%90)<br/>
-11：(未完待续。。。）
+12：H264音视频对讲开发<br/>
+13：(未完待续。。。）
 ***
 ```
 联系方式： QQ群: 673450581   个人QQ：1094035520   昵称：肥兔子
