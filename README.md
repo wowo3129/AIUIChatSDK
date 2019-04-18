@@ -1,4 +1,5 @@
 [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
+[![HitCount](http://hits.dwyl.io/{username}/{project}.svg)](http://hits.dwyl.io/{username}/{project})
 ***
 [ChatSDK](https://github.com/wowo3129/AIUIChatSDK/tree/master/chatsdk) :是对AIUI的语音SDK封装,套餐费用最低在6万/年</br>
 [iflylib](https://github.com/wowo3129/MvpApp/tree/master/iflylib) :是对原始msc的语音SDK封装，相对AIUI便宜很多</br>
