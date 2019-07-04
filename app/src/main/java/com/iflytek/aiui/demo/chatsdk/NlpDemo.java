@@ -12,6 +12,8 @@ import com.aiuisdk.BaseSpeechCallback;
 import com.aiuisdk.SpeechManager;
 import com.tbruyelle.rxpermissions2.RxPermissions;
 
+import io.reactivex.disposables.Disposable;
+
 /**
  * 语义理解demo。
  *
@@ -68,7 +70,7 @@ public class NlpDemo extends Activity {
 
     @SuppressLint("CheckResult")
     private void initPermission() {
-        new RxPermissions(this).request(Manifest.permission.RECORD_AUDIO,
+        Disposable subscribe = new RxPermissions(this).request(Manifest.permission.RECORD_AUDIO,
                 Manifest.permission.READ_PHONE_STATE, Manifest.permission.WRITE_EXTERNAL_STORAGE,
                 Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION,
                 Manifest.permission.CHANGE_NETWORK_STATE, Manifest.permission.ACCESS_WIFI_STATE,

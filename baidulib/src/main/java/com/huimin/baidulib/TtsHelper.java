@@ -3,18 +3,15 @@ package com.huimin.baidulib;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
-import android.text.TextUtils;
 
 import com.baidu.tts.chainofresponsibility.logger.LoggerProxy;
 import com.baidu.tts.client.SpeechSynthesizer;
-import com.baidu.tts.client.SpeechSynthesizerListener;
 import com.baidu.tts.client.TtsMode;
 import com.huimin.baidulib.control.InitConfig;
 import com.huimin.baidulib.control.MySyntherizer;
 import com.huimin.baidulib.control.NonBlockSyntherizer;
 import com.huimin.baidulib.listener.ISpeakListener;
 import com.huimin.baidulib.listener.MessageListener;
-import com.huimin.baidulib.util.AutoCheck;
 import com.huimin.baidulib.util.AutoTtsCheck;
 import com.huimin.baidulib.util.OfflineResource;
 

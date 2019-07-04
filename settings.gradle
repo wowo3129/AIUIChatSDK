@@ -1,1 +1,1 @@
-include ':app', ':chatsdk',':baidulib'
+include ':app', ':chatsdk',':baidulib',':iflylib'
