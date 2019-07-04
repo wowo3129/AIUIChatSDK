@@ -4,6 +4,7 @@
 [ChatSDK](https://github.com/wowo3129/AIUIChatSDK/tree/master/chatsdk) :是对AIUI的语音SDK封装,套餐费用最低在6万/年</br>
 [iflylib](https://github.com/wowo3129/MvpApp/tree/master/iflylib) :是对原始msc的语音SDK封装，相对AIUI便宜很多</br>
 [baidulib](https://github.com/wowo3129/AIUIChatSDK/tree/master/baidulib) :是对百度语音SDK封装,百度号称永久免费</br>
+[AIUITools](https://github.com/wowo3129/AIUITools) :AIUI网络测试工具-折线图动态测试可持续观测</br>
 <br/>
 共同特点：实现了全双工语音识别iat、合成tts、和语义nlp部分接口的封装,经过稳定测试，通过简洁的调用方式来满足开发需求。两者核心类都是 SpeechManager</br>
 参考文档：[玩转AIUI后处理](https://github.com/happyLiMing/AIUITPPServer)、[讯飞论坛](http://bbs.xfyun.cn/forum.php)</br>
@@ -17,6 +18,7 @@ ChatSDK 是基于讯飞的AIUI进行封装，使用简洁，您可以下载本�
 <br/>
 #### 功能包括：语音识别、语音合成、语音语义理解、文本语义理解<br/>
 #### 场景：(机器人、智能音箱、车载语音、家电语音、人机交互、在线教育机器人...)<br/>
+
 
 
 #### 使用说明：
