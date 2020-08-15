@@ -89,7 +89,8 @@ public void setErrorInfoCallback(IErrorInfoCallback callback) {
 10：AIUI不支持识别语种的切换，只有通过情景模式来切换自己想要的语种<br/>
 11：[关于 AIUI "continuous" 会识别到自身合成语音问题](http://bbs.xfyun.cn/forum.php?mod=viewthread&tid=40844&highlight=%E5%90%88%E6%88%90)<br/>
 12：H264音视频对讲开发<br/>
-13：(未完待续。。。）
+13: [思必驰语音的特点是支持高度定制化,支持定制后台语义透传] (https://www.duiopen.com/console/product/index.html#/products)
+14：(未完待续。。。）
 ***
 ```
 联系方式： QQ群: 673450581   个人QQ：1094035520   昵称：肥兔子
