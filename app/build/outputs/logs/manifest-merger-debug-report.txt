@@ -1,233 +1,367 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:2:1-42:12
-MERGED from [:chatsdk] D:\ydong\GitCode\AIUIChatSDK\chatsdk\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:design:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\fad37f8fe2f5d5757ff08a8348077359\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\38945b61583580485b263bb7803ae66a\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\56506abebfaabd6d5f13e3944c25e9cd\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\2de5289c2835ae9b9fb3e2f3ca003a52\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\91dd57dd4c481e182768e8da4cd14210\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\232be67a34f2bd1463819048c8c42a7f\AndroidManifest.xml:17:1-30:12
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\f576598871a05a3d6ac1ced786b300b6\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\9210aebd59c544ff7e5554ef39a2a5de\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\89466dd5668a62fcf6b1800c7b63b8c7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\176ef0ddb622107ed078008b9166827e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\3fa0d359aaf6bbdc5990300115882142\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\9f7840b19c0766d614a5ae4691b84237\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\de66951eb53f15f596468043189b0440\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\e410569b050be12381afd3d042b4b86e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\6114fee9025ef809c8491f0e8d7b63c3\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\e04831491e8d0600424c586b558e0539\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\5b9b8d97498cc514f632b060d7b7f002\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\8249c84cbde1326d86798ab61d338baa\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e94df6e71dbee7f09f5f2941d0eccc1a\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\335d6b39524a96aa8c887333007831f7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\3ccf4cf9a2471bdf77339ee5fa9a0730\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\f16a73de27f6f9010df175768a2f242d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\281e0e13b21d8bf74aa1294f589c7f91\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\b6c471620805d1657774e9507cf4133d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\28c1b2cd903e68e2a21d5211cc4119bc\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\d940af0ba5c382d3f852ff9b54000fc5\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\bc8164e98c74d98f9a9b4c40029dbb81\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\a2469e7adda1b0fb700c9fba0b76c65c\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\eb4211e19c8a7296ad56b3b780defed3\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\86ba49fa923a88fa0f8600d264df53cf\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\1013b829f8642589a1eb87696281dd09\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:2:1-42:12
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:2:1-51:12
+MERGED from [:chatsdk] /Users/dongyang/ThirdCode/AIUIChatSDK/chatsdk/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-28:12
+MERGED from [com.google.android.material:material:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/d23a14032be95e1c0d49d848980659b4/transformed/material-1.9.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/dongyang/.gradle/caches/transforms-3/e8ad0cf7253a4b12b7455caa33413ffa/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/dongyang/.gradle/caches/transforms-3/dd6f177d234eb640d6ef7f6ddb4c9840/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/dongyang/.gradle/caches/transforms-3/58dd3f4812eb78824b955d86d3508d52/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/40b431c5aef9fe8d79bbd634c77ae9f1/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/dongyang/.gradle/caches/transforms-3/2da8622c3d0cf7814d035fd7486098d0/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/dongyang/.gradle/caches/transforms-3/aabd96d17d3f8389713fa62fe78ebf8d/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.6.0] /Users/dongyang/.gradle/caches/transforms-3/309d750ae62e28634ce7c57218184743/transformed/jetified-activity-1.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/385e466706e73bb3d73bbe6b4875519d/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/74dede7469dde4ebb849523538d1356b/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/5ce07e52a7d4e86d32024963e64ae55f/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/dongyang/.gradle/caches/transforms-3/f2489d9065f4dca5ca4b308de42fbf04/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/dongyang/.gradle/caches/transforms-3/d0fc6f2e3351db4aa3a7b376dd964b4b/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/dongyang/.gradle/caches/transforms-3/f64967c674a30b5964ec360f3fe1fd1e/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/dongyang/.gradle/caches/transforms-3/1cbb9568b0ad18efcfa640a8dc80d6d7/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] /Users/dongyang/.gradle/caches/transforms-3/086c87377b46e1c001e6b8a413999706/transformed/jetified-rxpermissions-0.9.5/AndroidManifest.xml:2:1-13:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] /Users/dongyang/.gradle/caches/transforms-3/3b9ab8da8d3f902c3e032facef8353b9/transformed/jetified-rxandroid-2.1.1/AndroidManifest.xml:15:1-20:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/9d3ae9fbc8b4c31d332e4ee556f746a7/transformed/jetified-savedstate-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/dongyang/.gradle/caches/transforms-3/e5a7f5c955953cc9d13feeef1215b998/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/dongyang/.gradle/caches/transforms-3/47ac39755f246ef2ff54ad5b7942d42f/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/9e273d98ab3096fcf193178fecca25fc/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/ef66750d44341521985085f234b11a88/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/dongyang/.gradle/caches/transforms-3/bebc84e5611febee61e63b319d718ccf/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/aa8ac483add921dafa22eb66b84f2064/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] /Users/dongyang/.gradle/caches/transforms-3/164e3c0afb92a7e3b5c15f9935adbebd/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/4c666ee4e9502ea3205dee12a9a32221/transformed/jetified-core-ktx-1.9.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/dongyang/.gradle/caches/transforms-3/56c8e8a27068d68a4c0fd4ce9c0c4322/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/dongyang/.gradle/caches/transforms-3/7f4858d3b05a121bbfdbd0f3702fd854/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/3d0b12a6a2875ebc8055ad98f7863014/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/dongyang/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /Users/dongyang/.gradle/caches/transforms-3/ebaeb86926c154bf0568d468bc2e618c/transformed/jetified-lifecycle-service-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/dongyang/.gradle/caches/transforms-3/ecb295b800ded09051f724a4ba193524/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/d61520087bb53d23a4e3afad5636d15d/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /Users/dongyang/.gradle/caches/transforms-3/833404cf109268943491220c8a18ee04/transformed/lifecycle-livedata-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/dongyang/.gradle/caches/transforms-3/9b72d3a0628617d3f17d9cb77d3f51cf/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/dongyang/.gradle/caches/transforms-3/0de8b80e80221d3f31c9086666059ce1/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dongyang/.gradle/caches/transforms-3/14779f0273fd86f43e1f02af1bcd1f85/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/05c60de61a6baf2d3b3a5a3431136800/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/a91d0e13601b70491790d353890fd533/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/eb096476208bed94cd51cc904aa804e3/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/87b6f924c6c766718f595823a69da52a/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/de2279805fd1769856255174ea323925/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:2:1-51:12
 	package
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:3:5-44
-		INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml
-		INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:4:5-44
+		INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:2:1-42:12
-		INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:2:1-51:12
+		INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:2:1-42:12
-		INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml
+		INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:2:1-51:12
+		INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:5:5-71
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:6:5-71
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-71
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-71
 	android:name
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:5:22-68
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:6:22-68
 uses-permission#android.permission.INTERNET
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:6:5-67
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:7:5-67
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-67
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-67
 	android:name
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:7:22-64
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:7:5-79
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:8:5-79
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-79
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-79
 	android:name
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:7:22-76
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:8:22-76
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:8:5-75
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:9:5-75
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-75
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-75
 	android:name
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:8:22-72
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:9:22-72
 uses-permission#android.permission.READ_CONTACTS
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:9:5-72
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:10:5-72
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:5-72
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:5-72
 	android:name
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:9:22-69
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:10:22-69
 uses-permission#android.permission.WRITE_SETTINGS
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:10:5-73
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:11:5-73
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:5-73
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:5-73
 	android:name
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:10:22-70
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:11:22-70
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:13:5-80
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:14:5-80
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:5-80
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:5-80
 	android:name
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:13:22-77
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:14:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:14:5-81
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:15:5-81
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-81
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:5-81
 	android:name
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:14:22-78
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:15:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:17:5-79
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:18:5-79
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:17:22-76
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:18:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:18:5-76
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:19:5-76
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-76
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-76
 	android:name
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:18:22-73
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:19:22-73
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:20:5-76
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:21:5-76
 	android:name
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:20:22-73
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:21:22-73
 uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:23:5-89
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:24:5-89
 	android:name
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:23:22-86
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:24:22-86
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:26:5-81
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:27:5-81
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:5-81
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:5-81
 	android:name
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:26:22-78
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:27:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:27:5-79
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:28:5-79
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-79
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-79
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:5-79
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:5-79
 	android:name
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:27:22-76
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:28:22-76
 application
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:29:5-40:19
-MERGED from [com.android.support:design:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\fad37f8fe2f5d5757ff08a8348077359\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\fad37f8fe2f5d5757ff08a8348077359\AndroidManifest.xml:22:5-20
-MERGED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\232be67a34f2bd1463819048c8c42a7f\AndroidManifest.xml:22:5-28:19
-MERGED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\232be67a34f2bd1463819048c8c42a7f\AndroidManifest.xml:22:5-28:19
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e94df6e71dbee7f09f5f2941d0eccc1a\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e94df6e71dbee7f09f5f2941d0eccc1a\AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\3ccf4cf9a2471bdf77339ee5fa9a0730\AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\3ccf4cf9a2471bdf77339ee5fa9a0730\AndroidManifest.xml:22:5-23:19
-	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e94df6e71dbee7f09f5f2941d0eccc1a\AndroidManifest.xml:22:18-91
-	android:name
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:29:18-37
-activity#com.iflytek.aiui.demo.chatsdk.NlpDemo
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:30:9-39:20
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:30:5-49:19
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:5-26:19
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:5-26:19
+MERGED from [com.google.android.material:material:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/d23a14032be95e1c0d49d848980659b4/transformed/material-1.9.0/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/d23a14032be95e1c0d49d848980659b4/transformed/material-1.9.0/AndroidManifest.xml:24:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/dongyang/.gradle/caches/transforms-3/e8ad0cf7253a4b12b7455caa33413ffa/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/dongyang/.gradle/caches/transforms-3/e8ad0cf7253a4b12b7455caa33413ffa/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/dongyang/.gradle/caches/transforms-3/2da8622c3d0cf7814d035fd7486098d0/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/dongyang/.gradle/caches/transforms-3/2da8622c3d0cf7814d035fd7486098d0/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] /Users/dongyang/.gradle/caches/transforms-3/086c87377b46e1c001e6b8a413999706/transformed/jetified-rxpermissions-0.9.5/AndroidManifest.xml:11:5-20
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] /Users/dongyang/.gradle/caches/transforms-3/086c87377b46e1c001e6b8a413999706/transformed/jetified-rxpermissions-0.9.5/AndroidManifest.xml:11:5-20
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/dongyang/.gradle/caches/transforms-3/7f4858d3b05a121bbfdbd0f3702fd854/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/dongyang/.gradle/caches/transforms-3/7f4858d3b05a121bbfdbd0f3702fd854/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/dongyang/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/dongyang/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dongyang/.gradle/caches/transforms-3/14779f0273fd86f43e1f02af1bcd1f85/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dongyang/.gradle/caches/transforms-3/14779f0273fd86f43e1f02af1bcd1f85/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 	android:screenOrientation
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:33:13-49
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:36:9-46
+	android:requestLegacyExternalStorage
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:35:9-52
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:38:9-35
+	android:fullBackupContent
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:33:9-54
+	android:allowBackup
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:31:9-35
+	android:theme
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:37:9-47
+	android:networkSecurityConfig
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:34:9-69
+	android:dataExtractionRules
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:32:9-65
+	android:name
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:30:18-37
+activity#com.iflytek.aiui.demo.chatsdk.HomeActivity
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:39:9-48:20
 	android:label
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:32:13-45
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:41:13-45
 	android:windowSoftInputMode
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:34:13-55
-	android:name
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:31:13-36
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:35:13-38:29
-action#android.intent.action.MAIN
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:36:17-69
-	android:name
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:36:25-66
-category#android.intent.category.LAUNCHER
-ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:37:17-77
-	android:name
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml:37:27-74
-uses-sdk
-INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml
-INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml
-MERGED from [:chatsdk] D:\ydong\GitCode\AIUIChatSDK\chatsdk\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:chatsdk] D:\ydong\GitCode\AIUIChatSDK\chatsdk\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:design:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\fad37f8fe2f5d5757ff08a8348077359\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\fad37f8fe2f5d5757ff08a8348077359\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\38945b61583580485b263bb7803ae66a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\38945b61583580485b263bb7803ae66a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\56506abebfaabd6d5f13e3944c25e9cd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\56506abebfaabd6d5f13e3944c25e9cd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\2de5289c2835ae9b9fb3e2f3ca003a52\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\2de5289c2835ae9b9fb3e2f3ca003a52\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\91dd57dd4c481e182768e8da4cd14210\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\91dd57dd4c481e182768e8da4cd14210\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\232be67a34f2bd1463819048c8c42a7f\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\232be67a34f2bd1463819048c8c42a7f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\f576598871a05a3d6ac1ced786b300b6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\f576598871a05a3d6ac1ced786b300b6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\9210aebd59c544ff7e5554ef39a2a5de\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\9210aebd59c544ff7e5554ef39a2a5de\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\89466dd5668a62fcf6b1800c7b63b8c7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\89466dd5668a62fcf6b1800c7b63b8c7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\176ef0ddb622107ed078008b9166827e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\176ef0ddb622107ed078008b9166827e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\3fa0d359aaf6bbdc5990300115882142\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\3fa0d359aaf6bbdc5990300115882142\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\9f7840b19c0766d614a5ae4691b84237\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\9f7840b19c0766d614a5ae4691b84237\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\de66951eb53f15f596468043189b0440\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\de66951eb53f15f596468043189b0440\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\e410569b050be12381afd3d042b4b86e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\e410569b050be12381afd3d042b4b86e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\6114fee9025ef809c8491f0e8d7b63c3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\6114fee9025ef809c8491f0e8d7b63c3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\e04831491e8d0600424c586b558e0539\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\e04831491e8d0600424c586b558e0539\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\5b9b8d97498cc514f632b060d7b7f002\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\5b9b8d97498cc514f632b060d7b7f002\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\8249c84cbde1326d86798ab61d338baa\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\8249c84cbde1326d86798ab61d338baa\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e94df6e71dbee7f09f5f2941d0eccc1a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\e94df6e71dbee7f09f5f2941d0eccc1a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\335d6b39524a96aa8c887333007831f7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\335d6b39524a96aa8c887333007831f7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\3ccf4cf9a2471bdf77339ee5fa9a0730\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\3ccf4cf9a2471bdf77339ee5fa9a0730\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\f16a73de27f6f9010df175768a2f242d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\f16a73de27f6f9010df175768a2f242d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\281e0e13b21d8bf74aa1294f589c7f91\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\281e0e13b21d8bf74aa1294f589c7f91\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\b6c471620805d1657774e9507cf4133d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\b6c471620805d1657774e9507cf4133d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\28c1b2cd903e68e2a21d5211cc4119bc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\28c1b2cd903e68e2a21d5211cc4119bc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\d940af0ba5c382d3f852ff9b54000fc5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\d940af0ba5c382d3f852ff9b54000fc5\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\bc8164e98c74d98f9a9b4c40029dbb81\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\bc8164e98c74d98f9a9b4c40029dbb81\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\a2469e7adda1b0fb700c9fba0b76c65c\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\a2469e7adda1b0fb700c9fba0b76c65c\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\eb4211e19c8a7296ad56b3b780defed3\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\eb4211e19c8a7296ad56b3b780defed3\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\86ba49fa923a88fa0f8600d264df53cf\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\86ba49fa923a88fa0f8600d264df53cf\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\1013b829f8642589a1eb87696281dd09\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\1013b829f8642589a1eb87696281dd09\AndroidManifest.xml:20:5-44
-INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml
-INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml
-	android:targetSdkVersion
-		INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml
-		INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml
-	android:minSdkVersion
-		INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml
-		ADDED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml
-		INJECTED from D:\ydong\GitCode\AIUIChatSDK\app\src\main\AndroidManifest.xml
-provider#android.arch.lifecycle.ProcessLifecycleOwnerInitializer
-ADDED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\232be67a34f2bd1463819048c8c42a7f\AndroidManifest.xml:23:9-27:43
-	android:authorities
-		ADDED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\232be67a34f2bd1463819048c8c42a7f\AndroidManifest.xml:25:13-68
-	android:multiprocess
-		ADDED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\232be67a34f2bd1463819048c8c42a7f\AndroidManifest.xml:27:13-40
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:42:13-55
 	android:exported
-		ADDED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\232be67a34f2bd1463819048c8c42a7f\AndroidManifest.xml:26:13-37
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:43:13-36
 	android:name
-		ADDED from [android.arch.lifecycle:extensions:1.1.0] C:\Users\ydong\.gradle\caches\transforms-1\files-1.1\extensions-1.1.0.aar\232be67a34f2bd1463819048c8c42a7f\AndroidManifest.xml:24:13-83
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:40:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:44:13-47:29
+action#android.intent.action.MAIN
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:45:17-69
+	android:name
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:45:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:46:17-77
+	android:name
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml:46:27-74
+uses-sdk
+INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml
+INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml
+MERGED from [:chatsdk] /Users/dongyang/ThirdCode/AIUIChatSDK/chatsdk/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:chatsdk] /Users/dongyang/ThirdCode/AIUIChatSDK/chatsdk/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:iflylib] /Users/dongyang/ThirdCode/AIUIChatSDK/iflylib/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.material:material:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/d23a14032be95e1c0d49d848980659b4/transformed/material-1.9.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/d23a14032be95e1c0d49d848980659b4/transformed/material-1.9.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/dongyang/.gradle/caches/transforms-3/e8ad0cf7253a4b12b7455caa33413ffa/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/dongyang/.gradle/caches/transforms-3/e8ad0cf7253a4b12b7455caa33413ffa/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/dongyang/.gradle/caches/transforms-3/dd6f177d234eb640d6ef7f6ddb4c9840/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/dongyang/.gradle/caches/transforms-3/dd6f177d234eb640d6ef7f6ddb4c9840/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/dongyang/.gradle/caches/transforms-3/58dd3f4812eb78824b955d86d3508d52/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/dongyang/.gradle/caches/transforms-3/58dd3f4812eb78824b955d86d3508d52/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/40b431c5aef9fe8d79bbd634c77ae9f1/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/40b431c5aef9fe8d79bbd634c77ae9f1/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/dongyang/.gradle/caches/transforms-3/2da8622c3d0cf7814d035fd7486098d0/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/dongyang/.gradle/caches/transforms-3/2da8622c3d0cf7814d035fd7486098d0/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/dongyang/.gradle/caches/transforms-3/aabd96d17d3f8389713fa62fe78ebf8d/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/dongyang/.gradle/caches/transforms-3/aabd96d17d3f8389713fa62fe78ebf8d/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.6.0] /Users/dongyang/.gradle/caches/transforms-3/309d750ae62e28634ce7c57218184743/transformed/jetified-activity-1.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.6.0] /Users/dongyang/.gradle/caches/transforms-3/309d750ae62e28634ce7c57218184743/transformed/jetified-activity-1.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/385e466706e73bb3d73bbe6b4875519d/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/385e466706e73bb3d73bbe6b4875519d/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/74dede7469dde4ebb849523538d1356b/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/74dede7469dde4ebb849523538d1356b/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/5ce07e52a7d4e86d32024963e64ae55f/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/5ce07e52a7d4e86d32024963e64ae55f/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/dongyang/.gradle/caches/transforms-3/f2489d9065f4dca5ca4b308de42fbf04/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /Users/dongyang/.gradle/caches/transforms-3/f2489d9065f4dca5ca4b308de42fbf04/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/dongyang/.gradle/caches/transforms-3/d0fc6f2e3351db4aa3a7b376dd964b4b/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /Users/dongyang/.gradle/caches/transforms-3/d0fc6f2e3351db4aa3a7b376dd964b4b/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/dongyang/.gradle/caches/transforms-3/f64967c674a30b5964ec360f3fe1fd1e/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/dongyang/.gradle/caches/transforms-3/f64967c674a30b5964ec360f3fe1fd1e/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/dongyang/.gradle/caches/transforms-3/1cbb9568b0ad18efcfa640a8dc80d6d7/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/dongyang/.gradle/caches/transforms-3/1cbb9568b0ad18efcfa640a8dc80d6d7/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] /Users/dongyang/.gradle/caches/transforms-3/086c87377b46e1c001e6b8a413999706/transformed/jetified-rxpermissions-0.9.5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] /Users/dongyang/.gradle/caches/transforms-3/086c87377b46e1c001e6b8a413999706/transformed/jetified-rxpermissions-0.9.5/AndroidManifest.xml:7:5-9:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] /Users/dongyang/.gradle/caches/transforms-3/3b9ab8da8d3f902c3e032facef8353b9/transformed/jetified-rxandroid-2.1.1/AndroidManifest.xml:18:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.1] /Users/dongyang/.gradle/caches/transforms-3/3b9ab8da8d3f902c3e032facef8353b9/transformed/jetified-rxandroid-2.1.1/AndroidManifest.xml:18:5-43
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/9d3ae9fbc8b4c31d332e4ee556f746a7/transformed/jetified-savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/9d3ae9fbc8b4c31d332e4ee556f746a7/transformed/jetified-savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/dongyang/.gradle/caches/transforms-3/e5a7f5c955953cc9d13feeef1215b998/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/dongyang/.gradle/caches/transforms-3/e5a7f5c955953cc9d13feeef1215b998/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/dongyang/.gradle/caches/transforms-3/47ac39755f246ef2ff54ad5b7942d42f/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/dongyang/.gradle/caches/transforms-3/47ac39755f246ef2ff54ad5b7942d42f/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/9e273d98ab3096fcf193178fecca25fc/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/9e273d98ab3096fcf193178fecca25fc/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/ef66750d44341521985085f234b11a88/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/ef66750d44341521985085f234b11a88/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/dongyang/.gradle/caches/transforms-3/bebc84e5611febee61e63b319d718ccf/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/dongyang/.gradle/caches/transforms-3/bebc84e5611febee61e63b319d718ccf/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/aa8ac483add921dafa22eb66b84f2064/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/aa8ac483add921dafa22eb66b84f2064/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] /Users/dongyang/.gradle/caches/transforms-3/164e3c0afb92a7e3b5c15f9935adbebd/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/dongyang/.gradle/caches/transforms-3/164e3c0afb92a7e3b5c15f9935adbebd/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/4c666ee4e9502ea3205dee12a9a32221/transformed/jetified-core-ktx-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/4c666ee4e9502ea3205dee12a9a32221/transformed/jetified-core-ktx-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/dongyang/.gradle/caches/transforms-3/56c8e8a27068d68a4c0fd4ce9c0c4322/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/dongyang/.gradle/caches/transforms-3/56c8e8a27068d68a4c0fd4ce9c0c4322/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/dongyang/.gradle/caches/transforms-3/7f4858d3b05a121bbfdbd0f3702fd854/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/dongyang/.gradle/caches/transforms-3/7f4858d3b05a121bbfdbd0f3702fd854/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/3d0b12a6a2875ebc8055ad98f7863014/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/3d0b12a6a2875ebc8055ad98f7863014/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/dongyang/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/dongyang/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /Users/dongyang/.gradle/caches/transforms-3/ebaeb86926c154bf0568d468bc2e618c/transformed/jetified-lifecycle-service-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /Users/dongyang/.gradle/caches/transforms-3/ebaeb86926c154bf0568d468bc2e618c/transformed/jetified-lifecycle-service-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/dongyang/.gradle/caches/transforms-3/ecb295b800ded09051f724a4ba193524/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/dongyang/.gradle/caches/transforms-3/ecb295b800ded09051f724a4ba193524/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/d61520087bb53d23a4e3afad5636d15d/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/d61520087bb53d23a4e3afad5636d15d/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /Users/dongyang/.gradle/caches/transforms-3/833404cf109268943491220c8a18ee04/transformed/lifecycle-livedata-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /Users/dongyang/.gradle/caches/transforms-3/833404cf109268943491220c8a18ee04/transformed/lifecycle-livedata-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/dongyang/.gradle/caches/transforms-3/9b72d3a0628617d3f17d9cb77d3f51cf/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/dongyang/.gradle/caches/transforms-3/9b72d3a0628617d3f17d9cb77d3f51cf/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/dongyang/.gradle/caches/transforms-3/0de8b80e80221d3f31c9086666059ce1/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/dongyang/.gradle/caches/transforms-3/0de8b80e80221d3f31c9086666059ce1/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dongyang/.gradle/caches/transforms-3/14779f0273fd86f43e1f02af1bcd1f85/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dongyang/.gradle/caches/transforms-3/14779f0273fd86f43e1f02af1bcd1f85/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/05c60de61a6baf2d3b3a5a3431136800/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/05c60de61a6baf2d3b3a5a3431136800/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/a91d0e13601b70491790d353890fd533/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/a91d0e13601b70491790d353890fd533/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/eb096476208bed94cd51cc904aa804e3/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/eb096476208bed94cd51cc904aa804e3/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/87b6f924c6c766718f595823a69da52a/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/87b6f924c6c766718f595823a69da52a/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/de2279805fd1769856255174ea323925/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/dongyang/.gradle/caches/transforms-3/de2279805fd1769856255174ea323925/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml
+INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dongyang/ThirdCode/AIUIChatSDK/app/src/main/AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/dongyang/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/dongyang/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dongyang/.gradle/caches/transforms-3/14779f0273fd86f43e1f02af1bcd1f85/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/dongyang/.gradle/caches/transforms-3/14779f0273fd86f43e1f02af1bcd1f85/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/dongyang/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+permission#com.iflytek.aiui.demo.chatsdk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+uses-permission#com.iflytek.aiui.demo.chatsdk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /Users/dongyang/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/dongyang/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/dongyang/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/dongyang/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78

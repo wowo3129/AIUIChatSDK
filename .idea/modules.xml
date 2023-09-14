@@ -3,8 +3,22 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AIUIChatSDK.iml" filepath="$PROJECT_DIR$/AIUIChatSDK.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/chatsdk/chatsdk.iml" filepath="$PROJECT_DIR$/chatsdk/chatsdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AIUIChatSDK.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AIUIChatSDK.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AIUIChatSDK.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AIUIChatSDK.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AIUIChatSDK.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AIUIChatSDK.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AIUIChatSDK.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AIUIChatSDK.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/baidulib/AIUIChatSDK.baidulib.iml" filepath="$PROJECT_DIR$/.idea/modules/baidulib/AIUIChatSDK.baidulib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/baidulib/AIUIChatSDK.baidulib.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/baidulib/AIUIChatSDK.baidulib.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/baidulib/AIUIChatSDK.baidulib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/baidulib/AIUIChatSDK.baidulib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/baidulib/AIUIChatSDK.baidulib.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/baidulib/AIUIChatSDK.baidulib.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chatsdk/AIUIChatSDK.chatsdk.iml" filepath="$PROJECT_DIR$/.idea/modules/chatsdk/AIUIChatSDK.chatsdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chatsdk/AIUIChatSDK.chatsdk.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/chatsdk/AIUIChatSDK.chatsdk.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chatsdk/AIUIChatSDK.chatsdk.main.iml" filepath="$PROJECT_DIR$/.idea/modules/chatsdk/AIUIChatSDK.chatsdk.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chatsdk/AIUIChatSDK.chatsdk.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/chatsdk/AIUIChatSDK.chatsdk.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/iflylib/AIUIChatSDK.iflylib.iml" filepath="$PROJECT_DIR$/.idea/modules/iflylib/AIUIChatSDK.iflylib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/iflylib/AIUIChatSDK.iflylib.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/iflylib/AIUIChatSDK.iflylib.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/iflylib/AIUIChatSDK.iflylib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/iflylib/AIUIChatSDK.iflylib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/iflylib/AIUIChatSDK.iflylib.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/iflylib/AIUIChatSDK.iflylib.unitTest.iml" />
     </modules>
   </component>
 </project>

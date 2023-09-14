@@ -1,1 +1,41 @@
+pluginManagement {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url "https://www.jitpack.io" }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        maven {
+            allowInsecureProtocol = true
+            url 'http://4thline.org/m2'
+        }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        maven { url "https://dl.bintray.com/thelasterstar/maven/" }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url "https://www.jitpack.io" }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        maven {
+            allowInsecureProtocol = true
+            url 'http://4thline.org/m2'
+        }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        maven { url "https://dl.bintray.com/thelasterstar/maven/" }
+    }
+}
+rootProject.name = "AIUIChatSDK"
 include ':app', ':chatsdk',':baidulib',':iflylib'

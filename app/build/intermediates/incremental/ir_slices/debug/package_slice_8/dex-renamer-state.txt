@@ -1,4 +1,0 @@
-#Wed Mar 13 19:21:42 CST 2019
-base.0=D\:\\ydong\\GitCode\\AIUIChatSDK\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\8
-path.0=classes.dex
-renamed.0=classes.dex

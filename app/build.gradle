@@ -1,14 +1,16 @@
-apply plugin: 'com.android.application'
-ext {
-    support_ver = '28.0.0'
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
 }
+
 android {
-    compileSdkVersion 28
-    buildToolsVersion '28.0.3'
+    namespace "com.iflytek.aiui.demo.chatsdk"
+    compileSdk 33
+
     defaultConfig {
         applicationId "com.iflytek.aiui.demo.chatsdk"
-        minSdkVersion 21
-        targetSdkVersion 28
+        minSdk 21
+        targetSdk 33
         versionCode 36
         versionName "1.5.4"
         vectorDrawables.useSupportLibrary = true
@@ -37,8 +39,11 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
     }
 
 }
@@ -46,14 +51,14 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     //support库依赖
-    implementation "com.android.support:support-vector-drawable:$support_ver"
-    implementation "com.android.support:design:$support_ver"
-    implementation "com.android.support:appcompat-v7:$support_ver"
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
-    implementation 'io.reactivex.rxjava2:rxjava:2.1.14-RC1'
-    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.19'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
     implementation project(path: ':chatsdk')
-    implementation project(path: ':baidulib')
+    implementation project(path: ':iflylib')
 }
 
 

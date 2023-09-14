@@ -2,7 +2,7 @@ package com.aiuisdk.config;
 
 import android.content.Context;
 import android.os.Environment;
-import android.support.annotation.IntDef;
+import androidx.annotation.IntDef;
 import android.util.Log;
 
 import org.json.JSONArray;

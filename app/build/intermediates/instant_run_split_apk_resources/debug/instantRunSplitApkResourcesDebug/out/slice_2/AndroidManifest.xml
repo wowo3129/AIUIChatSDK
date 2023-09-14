@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.iflytek.aiui.demo.chatsdk"
-      android:versionCode="36"
-      android:versionName="1.5.4"
-      split="lib_slice_2_apk">
-</manifest>
